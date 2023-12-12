@@ -21,7 +21,7 @@
 <body>
 
     <header>
-        <nav class="navbar sticky-top navbar-expand-sm bg-body-tertiary h-70px py-0">
+        <nav class="navbar sticky-top navbar-expand bg-body-tertiary h-70px py-0">
             <div class="container-fluid justify-content-">
                 <a class="navbar-brand" href="#">
                     <img class="h-50px w-50px" src="img/mobile-logo.png" alt="logo">
@@ -44,34 +44,76 @@
         </nav>
     </header>
 
-    <div class="sidebar w-60px bg-dark-blue">
-        <div class="sidebar-icons-container d-flex flex-column align-items-center justify-content-between h-100">
-            <div class="top d-flex flex-column align-items-center gap-2">
-                <a href="#">
-                    <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-solid fa-chart-simple" style="color: #ffffff;"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-solid fa-signal" style="color: #ffffff;"></i>
-                </a>
-            </div>
+    <main>
 
-            <div class="bottom top d-flex flex-column align-items-center gap-2">
-                <a href="#">
-                    <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
-                </a>
+        <div class="sidebar w-60px bg-dark-blue">
+            <div class="sidebar-icons-container d-flex flex-column align-items-center justify-content-between h-100">
+                <div class="top d-flex flex-column align-items-center gap-2">
+                    <a href="#">
+                        <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-simple" style="color: #ffffff;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-signal" style="color: #ffffff;"></i>
+                    </a>
+                </div>
+
+                <div class="bottom top d-flex flex-column align-items-center gap-2">
+                    <a href="#">
+                        <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                    </a>
+                </div>
             </div>
         </div>
-        <main>
-        </main>
 
-        <!-- Bootstrap Javascript -->
+        <div class="content w-100 overflow-auto">
+            <header class="main-header bg-blue h-250px text-white w-100">
+                <div class="container h-100">
+                    <div class="row row-cols-1 mb-4">
+                        <div class="col-12 mt-4">
+                            <span>Nuovo Studente</span>
+                            <a href="#" class="b-white-plus ms-3">
+                                <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"></script>
+                    <div class="row row-cols-1 gap-1 mb-4">
+                        <div class="col-12 d-flex align-items-center gap-2 ">
+                            <h2>Boolean</h2>
+                            <a href="#" class="br-grey">Piano Blaze</a>
+                        </div>
+
+                        <div class="col-12 d-flex align-items-center gap-2">
+                            <a href="#" class="br-grey">3 app</a>
+                            <span>>></span>
+                            <a href="#" class="br-grey br-50">
+                                <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 gap-1">
+                        <div class="col-12">
+                            <span>Studenti online negli ultimi 30 minuti</span>
+                        </div>
+
+                        <div class="col-12">
+                            <span class="fs-4">125</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </main>
+
+    <!-- Bootstrap Javascript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
