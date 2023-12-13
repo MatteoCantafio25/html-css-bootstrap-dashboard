@@ -24,7 +24,8 @@
         <nav class="navbar sticky-top navbar-expand bg-body-tertiary h-70px py-0">
             <div class="container-fluid justify-content-">
                 <a class="navbar-brand" href="#">
-                    <img class="h-50px w-50px" src="img/mobile-logo.png" alt="logo">
+                    <img class="h-50px w-50px d-lg-none" src="img/mobile-logo.png" alt="logo">
+                    <img class="d-none d-lg-block" src="img/logo.svg" alt="logo">
                 </a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <form class="d-flex flex-grow-1" role="search">
@@ -33,9 +34,21 @@
                     </form>
                 </div>
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-0 mb-lg-0 d-flex align-items-center gap-3">
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="" aria-current="page" href="#"><i class="fa-solid fa-list-ul"
+                                    style="color: #5b5858;"></i></a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="" aria-current="page" href="#"><i class="fa-solid fa-circle-question"
+                                    style="color: #5b5858;"></i></a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="" aria-current="page" href="#"><i class="fa-solid fa-ellipsis-vertical"
+                                    style="color: #5b5858;"></i></a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-bell"
+                            <a class="" aria-current="page" href="#"><i class="fa-solid fa-bell"
                                     style="color: #ff8f00;"></i></a>
                         </li>
                     </ul>
@@ -78,9 +91,9 @@
                     <div class="row row-cols-1 mb-4">
                         <div class="col-12">
                             <span>Nuovo Studente</span>
-                            <a href="#" class="b-white-plus ms-3">
-                                <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
-                            </a>
+                            <button class="b-white-plus bg-blue ms-3" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                    class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
                         </div>
                     </div>
 
@@ -345,6 +358,80 @@
             </div>
         </div>
     </main>
+
+
+    <!-- Offcanvas -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form>
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-3">
+                        <label class="form-label">Nome</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                        <label class="form-label">Cognome</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Indirizzo</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-3">
+                        <label class="form-label">Città</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label class="form-label">Stato</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Scegli...</option>
+                            <option value="1">Italia</option>
+                            <option value="2">Inghilterra</option>
+                            <option value="3">Spagna</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-lg-2 mb-3">
+                        <label class="form-label">CAP</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Foto</label>
+                    <input type="file" class="form-control">
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Salva</button>
+                <button type="submit" class="btn btn-warning">Svuota</button>
+            </form>
+        </div>
+    </div>
 
     <!-- Bootstrap Javascript -->
 
