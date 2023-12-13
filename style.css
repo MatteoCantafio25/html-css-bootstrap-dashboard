@@ -99,12 +99,6 @@ a {
     font-weight: 600;
 }
 
-/* Main */
-
-
-/* Tabella */
-
-
 /* Sidebar */
 
 .sidebar {
@@ -112,12 +106,17 @@ a {
     padding: 25px 5px;
 }
 
-/* Footer */
-
+/* Media Query */
 
 
 @media screen and (min-width: 992px) {
     .sidebar {
         width: 150px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .offcanvas.offcanvas-end {
+        width: 700px;
     }
 }
